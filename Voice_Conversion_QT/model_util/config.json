@@ -1,0 +1,29 @@
+{
+    "preprocess_config":{
+        "sample_rate":16000,
+        "origin_wavpath": "/mnt/26EAD496EAD46419/VC/DATA/temp_data/temp_input",
+        "target_wavpath": "/mnt/26EAD496EAD46419/VC/DATA/temp_data/temp_out",
+        "mc_dir": "/mnt/26EAD496EAD46419/VC/DATA/temp_data/temp_mc",
+        "num_workers": null
+    },
+    "npz_path":"/mnt/26EAD496EAD46419/VC/DATA/temp_data/npz_files",
+    "origin_wav_name": "/mnt/26EAD496EAD46419/VC/DATA/temp_data/temp_input/temp_speaker/temp_speaker_source.wav",
+    "speakers" : ["p262", "p272", "p229", "p232", "p292", "p293", "p360", "p361", "p248", "p251", "#蔡英文", "#韓國瑜", "#馬英九"],
+    "speakers_image":{"#蔡英文":"/home/yidar/QT/Voice-Pair-PyQt5/Voice_Conversion_QT/images/english.png",
+                      "#韓國瑜":"/home/yidar/QT/Voice-Pair-PyQt5/Voice_Conversion_QT/images/fish.gif",
+                      "#馬英九":"/home/yidar/QT/Voice-Pair-PyQt5/Voice_Conversion_QT/images/horse.jpeg"},
+    "default_image":"/home/yidar/QT/Voice-Pair-PyQt5/Voice_Conversion_QT/images/convict.jpg",
+    "convert_config" : {
+        "num_speakers" : 10,
+        "num_converted_wavs" : 1,
+        "resume_iters" : 175000,
+        "src_spk" : "temp_speaker",
+        "trg_spk" : "p262",
+        "train_data_dir":"/mnt/26EAD496EAD46419/VC/DATA/temp_data/temp_mc/",
+        "test_data_dir" :"/mnt/26EAD496EAD46419/VC/DATA/temp_data/temp_mc/",
+        "wav_dir" : "/mnt/26EAD496EAD46419/VC/DATA/temp_data/temp_out",
+        "log_dir" : "./logs",
+        "model_save_dir" : "/home/yidar/QT/Voice-Pair-PyQt5/Voice_Conversion_QT/model_util/model_backend/models",
+        "convert_dir" : "/home/yidar/QT/Voice-Pair-PyQt5/Voice_Conversion_QT/model_util/converted"
+    }
+}

@@ -110,13 +110,13 @@ class SignalDisplayWidget(QWidget):
                                              options=options)
       print(path)
       if path:
-        self.load_audio(path=path)
+        return self.load_audio(path=path)
       else:
         print("you do not select anything")
-      return
+      return 
     self.signal, self.sr = librosa.core.load(path)
     self.process_all()
-    return
+    return self.signal, self.sr
 
   def record_audio(self,sr=44100):
     QMessageBox.about(self, "Record Audio", "Not Implement Yet") 

@@ -5,7 +5,6 @@ import queue
 import sys
 
 import sounddevice as sd
-import soundfile as sf
 import numpy as np  
 
 import threading
